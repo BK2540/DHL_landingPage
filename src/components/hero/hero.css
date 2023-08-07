@@ -1,0 +1,295 @@
+.hero{
+    height: calc(75vh - 72px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    background-image: url("https://www.dhl.com/content/dam/dhl/global/core/images/marketing-stage-2730x1120/glo-home-maketing-stage-tracking.web.1365.428.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-bottom: 56px;
+    margin-top: 120px;
+}
+
+.overlay{
+    background-color: rgba(19, 19, 19, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hero_content-top{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+    z-index: 1;
+    margin-bottom: 120px;
+}
+
+.hero_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.label{
+    position: absolute;
+    color: #666666;
+    left: 12px;
+    padding: 1.7rem .4rem;
+}
+
+.hero_input input{
+    font-size: 1rem;
+    padding: 17px 14px;
+    width: 520px;
+    border-radius: 4px;
+    border: 1px solid rgb(212,5,17);
+    position: relative;
+    
+}
+
+.hero_input input:hover{
+    border: 1px solid #191919;
+    cursor: pointer;
+}
+
+.hero_input .custom_btn{
+    border-radius: 0 4px 4px 0;
+    border: none;
+    position: absolute;
+    border:2.5px solid rgb(212,5,17);
+    right: 2px;
+}
+
+.hero_title{
+    font-weight: 900;
+    font-size: 0.85rem;
+}
+
+.hero_ref>span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    gap: 8px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.hero_ref span>p:hover{
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.hero_content-bottom{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    bottom: -32px;    
+}
+
+.bottom_box{
+    background-color: white;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 220px;
+    height: 120px;
+    text-align: center;
+    gap: 8px;
+    box-shadow: 1px 1px 4px #20202060;
+}
+
+.bottom_box:hover{
+    box-shadow: 1px 8px 31px 4px rgba(161,161,161,0.49);
+    -webkit-box-shadow: 1px 8px 31px 4px rgba(161,161,161,0.49);
+    -moz-box-shadow: 1px 8px 31px 4px rgba(161,161,161,0.49);
+    cursor: pointer;
+    z-index: 3;
+
+    .hb_title{
+        color: rgb(212,5,17);
+    }
+}
+
+.bottom_box:nth-child(1)
+{
+    border-radius: 4px 0 0 4px;
+}
+
+.bottom_box:nth-child(2)
+{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.bottom_box:nth-child(3)
+{
+    height: 149px;
+    border-radius: 4px 4px 4px 0;
+    overflow: hidden;
+}
+
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 24px solid transparent;
+    border-bottom: 24px solid transparent;
+    
+    border-left: 24px solid #FFCC00;
+    border-radius: 0px 0px 8px;
+    position: absolute;
+    right: -3.4px;
+    top: -16px;
+    rotate: 315deg;
+  }
+
+.bottom_box img{
+    width: 35px;
+    height: 35px;
+}
+
+.hb_title{
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+
+.hb_desc{
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .hero{
+        margin-bottom: 32px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .hero_content-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        margin: 24px;
+    }
+    
+    .hero_input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+
+    }
+    
+    .label{
+        position: absolute;
+        color: #666666;
+        left: 28px;
+        top: 0;
+        padding: 1.7rem .4rem;
+    }
+
+    .hero_input input{
+        width: 80%;
+        height: 80px;
+        border-radius: 4px 4px 0 0;
+        border: 1px solid white;
+    }
+
+    .hero_input .custom_btn{
+        width: 87%;
+        padding: 16px 120px;
+        border-radius: 0 0 4px 4px;
+        border: 1px solid white;
+        position: absolute;
+        bottom: 2px;
+        left: 25px;
+    }
+    
+    .hero_title{
+        font-weight: 900;
+        font-size: 0.6rem;
+    }
+    
+    .hero_ref>span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        gap: 8px;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+    }
+
+    .hero_content-bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 24px;
+        gap: 12px;
+    }
+
+    .bottom_box{
+        width: 80%;
+        height: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bottom_box:nth-child(3){
+        width: 80%;
+        height: 5.5rem;
+
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .bottom_box img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .hb_title{
+        font-size: 0.6rem;
+    }
+
+    .arrow-right {       
+        position: absolute;
+        right: 24px;
+        top: 216px;
+      }
+}
+
+
+

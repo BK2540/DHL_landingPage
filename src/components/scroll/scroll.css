@@ -1,0 +1,27 @@
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d40511;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .scrollToTopBtn.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .scrollToTopBtn{
+      display: none;
+    }
+  }
+  
